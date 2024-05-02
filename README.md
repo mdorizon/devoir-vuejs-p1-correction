@@ -9,4 +9,6 @@ git init
 git add .
 # Commit
 git commit -m "<message>"
+# Create branch
+git checkout -b <branch name>
 ```
