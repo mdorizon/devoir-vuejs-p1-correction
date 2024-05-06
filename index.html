@@ -12,7 +12,16 @@
 
   <div id="app">
     <header>
-      <nav></nav>
+      <nav>
+        <div class="likes">
+          <i class="fa-solid fa-heart" v-if="this.numberOfLike == 0 "></i>
+          <i class="fa-solid fa-heart liked" v-if="this.numberOfLike > 0"></i>
+        </div>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping" v-if="this.totalPrice == 0"></i>
+          <i class="fa-solid fa-cart-shopping carted" v-if="this.totalPrice > 0"></i>
+        </div>
+      </nav>
     </header>
     <section>
       <div class="row">
@@ -23,13 +32,32 @@
               :id="item.id"
               :price="item.price"
               :src="item.imgSrc"
+              :like="item.like"
               :name="item.name"
+              :number="item.number"
+              @likeclicked="likeclicked"
+              @buyclicked="buyclicked"
               ></product-card>
             </div>
           </div>
         </div>
-        <div class="col-2">
-
+        <div class="col-2 basket">
+          <h3>Panier</h3>
+          <div class="item" v-for="product in buyList">
+            <div class="numberItems">
+              <p>{{ itemList[product.id].name }}</p>
+              <div class="btns">
+                <span @click="decrease(product.id)">-</span>
+                <span>{{ itemList[product.id].number }}</span>
+                <span @click="increase(product.id)">+</span>
+              </div>
+            </div>
+            <div class="numberItems">
+              <p>{{ itemList[product.id].price * itemList[product.id].number }} €</p>
+              <i class="fa-solid fa-trash" @click="removeItem(product.id)"></i>
+            </div>
+          </div>
+          <h3>{{ totalPrice }} €</h3>
         </div>
       </div>
     </section>

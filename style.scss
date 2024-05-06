@@ -56,3 +56,65 @@ $secondary-color: rgb(99, 216, 216);
     background-color: $secondary-color;
   }
 }
+.liked {
+  position: relative;
+  &:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    background-color: red;
+    border-radius: 32px;
+    right: -2px;
+    bottom: 0;
+  }
+}
+.carted {
+  position: relative;
+  &:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    background-color: red;
+    border-radius: 32px;
+    right: -5px;
+    bottom: 0;
+  }
+}
+
+nav {
+  height: 60px;
+  background-color: aliceblue;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  .likes,
+  .cart {
+    width: fit-content;
+    color: grey;
+  }
+}
+
+.basket {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .item {
+    background-color: pink;
+    padding: 5px 10px;
+    color: white;
+  }
+}
+
+.numberItems {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  .btns {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
