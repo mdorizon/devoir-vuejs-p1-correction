@@ -1,14 +1,19 @@
 # VueJS Ecommerce project
 
-# Note command line
-
-```bash
-# Init project
-git init
-# Add to staging
-git add .
-# Commit
-git commit -m "<message>"
-# Create branch
-git checkout -b <branch name>
-```
+![Image](./readme%20files/ecommerce-vuejs-full-01.png)
+![Image](./readme%20files/ecommerce-vuejs-full-02.png)
+![Image](./readme%20files/ecommerce-vuejs-full-03.png)
+![Image](./readme%20files/ecommerce-vuejs-full-04.png)
+![Image](./readme%20files/ecommerce-vuejs-full-05.png)
+![Image](./readme%20files/ecommerce-vuejs-full-06.png)
+![Image](./readme%20files/ecommerce-vuejs-full-07.png)
+![Image](./readme%20files/ecommerce-vuejs-full-08.png)
+![Image](./readme%20files/ecommerce-vuejs-full-09.png)
+![Image](./readme%20files/ecommerce-vuejs-full-10.png)
+![Image](./readme%20files/ecommerce-vuejs-full-11.png)
+![Image](./readme%20files/ecommerce-vuejs-full-12.png)
+![Image](./readme%20files/ecommerce-vuejs-full-13.png)
+![Image](./readme%20files/ecommerce-vuejs-full-14.png)
+![Image](./readme%20files/ecommerce-vuejs-full-15.png)
+![Image](./readme%20files/ecommerce-vuejs-full-16.png)
+![Image](./readme%20files/ecommerce-vuejs-full-17.png)
